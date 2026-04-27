@@ -1,21 +1,45 @@
+# 🚀 Título do Projeto
 
-# Tarefa de Aula:
+> Descrição curta e objetiva do que seu projeto faz. Ex: "Uma API RESTful para gerenciamento de biblioteca desenvolvida em Python."
+
+![Status do Projeto](https://shields.io)
+![Tecnologias](https://shields.io)
 
 ---
 
-- 1 - Refatorar o página1 igual ao index.
-- 2 - Adicionar no main apenas o conteúdo referente a página 1
-- 3 - Cria links para a página Home e Pagina2.
-- 4 - Criar a pagina2.html dentro de uma pasta de nome paginas.
-- 5 - Criar os links referentes a todas as páginas de ida e volta.
-- 6 - O conteúdo da pagina2 deve ser criado parecido com o da pagina1.
-- 7 - Aplique um estilo inline no body de todas as páginas que fique padrão.
-- 8 - Aplique estilização de alinhamento centralizado para todos os títulos existentes, Ex h1,h2 etc;
-- 9 - Altera a cor de fundo do Header e a borda.
-- Leitura e estudos da página 13 até 45
+## 📝 Descrição
+Uma breve descrição do que é o projeto. Por que ele foi construído? Qual problema ele resolve?
 
+## 🛠️ Funcionalidades
+- [x] Funcionalidade 1
+- [x] Funcionalidade 2
+- [ ] Funcionalidade 3 (Em desenvolvimento)
+
+## 🛠️ Tecnologias Utilizadas
+- **Linguagem:** [Python, JS, etc]
+- **Frameworks:** [FastAPI, React, etc]
+- **Banco de Dados:** [PostgreSQL, MongoDB, etc]
+
+## 🚀 Como Rodar o Projeto
+Siga estas etapas para rodar o projeto na sua máquina:
+
+```bash
+# Clone este repositório
+git clone https://github.com
+
+# Acesse a pasta do projeto
+cd seu-projeto
+
+# Instale as dependências
+npm install # ou pip install -r requirements.txt
+
+# Execute a aplicação
+npm start # ou python main.py
 ```
-https://www.w3schools.com/Css/
 
+## 👨‍💻 Autores
+- **Seu Nome** - [Seu GitHub](https://github.com)
+- **Colaborador** - [GitHub do Colaborador](https://github.com)
 
-
+## 📄 Licença
+Este projeto está sob a licença [MIT](https://opensource.org).
