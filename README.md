@@ -1,45 +1,38 @@
-# 🚀 Título do Projeto
+# Desafio Prático: Expandindo o Projeto Esporte Total
 
-> Descrição curta e objetiva do que seu projeto faz. Ex: "Uma API RESTful para gerenciamento de biblioteca desenvolvida em Python."
+**Objetivo:** Criar páginas internas específicas para cada esporte, interligar a navegação e aplicar conceitos de acessibilidade com ARIA.
 
-![Status do Projeto](https://shields.io)
-![Tecnologias](https://shields.io)
+## Passo 1: Estrutura de Arquivos
+1. Crie uma pasta chamada `paginas` na raiz do seu projeto.
+2. Dentro da pasta `paginas`, crie três novos arquivos HTML:
+   - `futebol.html`
+   - `basquete.html`
+   - `volei.html`
+
+## Passo 2: Adaptação de Conteúdo
+1. Copie a estrutura base da sua `index.html` e cole nos novos arquivos.
+2. Altere a tag `<title>` de cada página para refletir o conteúdo (ex: `<title>Futebol - Esporte Total</title>`).
+3. Modifique os títulos (`<h1>`, `<h2>`) e os textos dos parágrafos para falar especificamente sobre o esporte da respectiva página.
+
+## Passo 3: Ajuste da Navegação (Hyperlinks)
+Atualize os links (`href`) do cabeçalho em **todas as páginas** para que a navegação funcione perfeitamente entre a raiz e as subpastas.
+
+**Atenção aos caminhos relativos:**
+- Da `index.html` para as internas: `./paginas/nome-da-pagina.html`
+- Das internas para a `index.html`: `../index.html`
+- De uma interna para outra: `./nome-da-pagina.html`
+
+## Passo 4: Imagens e Ícones
+1. Substitua as imagens de destaque (Hero/Banners) para que correspondam ao esporte da página atual.
+2. Adicione novas imagens ilustrativas ou ícones para enriquecer o layout e diferenciar visualmente cada seção.
+
+## Passo 5: Acessibilidade (Foco em ARIA)
+O uso do `aria-label` é **obrigatório** em todo o projeto. Aplique-o estrategicamente onde o contexto visual não for suficiente para leitores de tela:
+- **Links genéricos:** Transforme links como "mais..." em botões acessíveis.
+  *Ex: `<a href="#" aria-label="Leia mais sobre as regras do basquete">mais...</a>`*
+- **Navegação:** Identifique seus menus.
+  *Ex: `<nav aria-label="Navegação Principal">`*
+- **Ícones decorativos:** Se utilizar ícones apenas para visual, esconda-os do leitor de tela usando `aria-hidden="true"`.
 
 ---
-
-## 📝 Descrição
-Uma breve descrição do que é o projeto. Por que ele foi construído? Qual problema ele resolve?
-
-## 🛠️ Funcionalidades
-- [x] Funcionalidade 1
-- [x] Funcionalidade 2
-- [ ] Funcionalidade 3 (Em desenvolvimento)
-
-## 🛠️ Tecnologias Utilizadas
-- **Linguagem:** [Python, JS, etc]
-- **Frameworks:** [FastAPI, React, etc]
-- **Banco de Dados:** [PostgreSQL, MongoDB, etc]
-
-## 🚀 Como Rodar o Projeto
-Siga estas etapas para rodar o projeto na sua máquina:
-
-```bash
-# Clone este repositório
-git clone https://github.com
-
-# Acesse a pasta do projeto
-cd seu-projeto
-
-# Instale as dependências
-npm install # ou pip install -r requirements.txt
-
-# Execute a aplicação
-npm start # ou python main.py
-```
-
-## 👨‍💻 Autores
-- **Seu Nome** - [Seu GitHub](https://github.com)
-- **Colaborador** - [GitHub do Colaborador](https://github.com)
-
-## 📄 Licença
-Este projeto está sob a licença [MIT](https://opensource.org).
+**Critério de Aceite:** O projeto será considerado concluído quando for possível navegar por todas as páginas através do menu superior sem encontrar links quebrados (Erro 404), e todos os botões de ação possuírem rótulos acessíveis.
