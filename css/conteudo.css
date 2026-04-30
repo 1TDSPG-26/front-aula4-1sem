@@ -24,22 +24,36 @@
     color: var(--cor-texto-primario);
 }
 
+.conteudo__tit{
+    text-align: center;
+    font-weight: bold;  
+    font-size: 2.3rem;
+    margin: 2rem 0;
+}
+
+.conteudo__txt{
+    margin: 2rem;
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
 .conteudo__btn{
-    background-color: var(--cor-primaria);
+    font-size: 1.8rem;  
+    border: 1px solid rgb(255, 255, 255);
     color: var(--cor-texto-primario);
 
     padding: 0.5rem 1.2rem;
     border-radius: 6px;
-    border: none;
 
     display: inline-block;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 2rem ;
+    margin: 2rem ;
 }
 
 .conteudo__btn:hover{
-    background-color: var(--cor-secundaria);
+    background-color: #fff ;
+    color: var(--cor-primaria);
     opacity: 0.85;
 }
 
