@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/script.js"></script>
 
+    <script>
+      //Este é um arrow-function
+      const saudacao2 = () => console.log("Olá mundo do HEAD!");
+    </script>
+
     <title>ESPORTE TOTAL</title>
   </head>
   <body>
@@ -17,13 +22,13 @@
             <a class="cabecalho__a cabecalho__a--active" href="#">Home</a>
           </li>
           <li class="cabecalho__li">
-            <a class="cabecalho__a" href="#">futebol</a>
+            <a class="cabecalho__a" href="#">Futebol</a>
           </li>
           <li class="cabecalho__li">
-            <a class="cabecalho__a" href="#">basquete</a>
+            <a class="cabecalho__a" href="#">Basquete</a>
           </li>
           <li class="cabecalho__li">
-            <a class="cabecalho__a" href="#">volei</a>
+            <a class="cabecalho__a" href="#">Volei</a>
           </li>
         </ul>
       </nav>
@@ -58,45 +63,50 @@
             provident perspiciatis. Vitae?
           </p>
 
-          <a class="hero__btn" href="#" aria-label="fique sabendo ">mais...</a>
+          <a class="hero__btn" href="#" onclick="(saudacao(), saudacao2())"
+            >mais...</a
+          >
         </div>
       </section>
-      <div class="conteudo_container">
-        <section class="conteudo_sec">
-          <h2 class="conteudo_tit">futebol</h2>
-          <p class="conteudo_txt">
+
+      <div class="conteudo__container">
+        <section class="conteudo__sec">
+          <h2 class="conteudo__tit">Futebol</h2>
+          <p class="conteudo__txt">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
             similique aperiam amet cum, eos sequi repellendus error earum
             maiores sapiente. Nam dolorum facilis quam provident ex consequatur
             magni! Ipsum quos odit earum voluptates pariatur voluptatum.
           </p>
-          <a class="conteudo_brn" href="#" aria-label="fique sabendo "
+          <a class="conteudo__btn" href="#" aria-label="Fique sabendo"
             >mais...</a
           >
         </section>
-        <section class="conteudo_sec">
-          <h2 class="conteudo_tit">basquete</h2>
-          <p class="conteudo_txt"></p>
-          <p>
+        <section class="conteudo__sec">
+          <h2 class="conteudo__tit">Basquete</h2>
+          <p class="conteudo__txt">
             Iusto culpa quam architecto assumenda totam cupiditate quisquam
             eaque perferendis temporibus qui, repudiandae maxime fuga, illum,
             deserunt alias. Doloribus velit officia accusantium expedita natus
             amet, eligendi repudiandae tenetur reprehenderit similique ex iure,
             enim vitae est?
           </p>
-          <a href="#" aria-label="fique sabendo ">mais...</a>
+          <a class="conteudo__btn" href="#" aria-label="Fique sabendo"
+            >mais...</a
+          >
         </section>
-        <section class="conteudo_sec">
-          <h2 class="conteudo_tit">volei</h2>
-          <p class="conteudo_txt"></p>
-          <p>
+        <section class="conteudo__sec">
+          <h2 class="conteudo__tit">Volei</h2>
+          <p class="conteudo__txt">
             Doloremque qui commodi recusandae enim, laboriosam assumenda
             doloribus nesciunt, aliquam nihil obcaecati id dolor minus minima
             ratione unde dolorum inventore alias ducimus corporis nobis
             aspernatur libero cupiditate! Perspiciatis maxime aperiam sed fugiat
             dolores tenetur nam?
           </p>
-          <a href="#" aria-label="fique sabendo ">mais...</a>
+          <a class="conteudo__btn" href="#" aria-label="Fique sabendo"
+            >mais...</a
+          >
         </section>
       </div>
     </main>
@@ -104,5 +114,13 @@
     <footer>
       <p>&copy; Todos os direitos reservados - ESPORTE TOTAL - 2026</p>
     </footer>
+
+    <script>
+      function saudacao() {
+        console.log("Olá mundo, através da FUNCTION!");
+      }
+      saudacao();
+      saudacao2();
+    </script>
   </body>
 </html>
