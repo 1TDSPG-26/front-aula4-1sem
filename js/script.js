@@ -3,3 +3,5 @@
 
 // alert("Meu nome é " + nome);
 // console.log("Meu nome é " + nome);
+
+document.write("Olá Mundo!");
