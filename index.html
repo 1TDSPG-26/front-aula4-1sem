@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/script.js"></script>
 
+    <Script>
+      const saudacao2 = ()=> console.log("Olá mundo do HEAD")
+    </Script>
+
     <title>ESPORTE TOTAL</title>
   </head>
   <body>
@@ -58,7 +62,7 @@
             provident perspiciatis. Vitae?
           </p>
 
-          <a class="hero__btn" href="#">mais...</a>
+          <a class="hero__btn" href="#" onclick="saudacao(), saudacao2()">mais...</a>
         </div>
       </section>
 
@@ -104,5 +108,14 @@
     <footer>
       <p>&copy; Todos os direitos reservados - ESPORTE TOTAL - 2026</p>
     </footer>
+
+    <script>
+      function saudacao(){
+        console.log("Olá mundo, arvés da FUNCTION!") 
+      }
+      
+      saudacao();
+      saudacao2();
+    </script>
   </body>
 </html>
