@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/script.js"></script>
+ 
+    <title>ESPORTE TOTAL - LOGIN</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a class="cabecalho__logo" href="./index.html">ESPORTE TOTAL</a>
+ 
+      <nav class="cabecalho__nav">
+        <ul class="cabecalho__ul">
+          <li class="cabecalho__li cabecalho__li-active">
+            <a class="cabecalho__a cabecalho__a--active" href="./index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <main class="conteudo">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">CONTROLE DE ACESSO</h1>
+
+          <form action="/login" method="get">
+            <fieldset>
+              <legend>LOGIN</legend>
+              <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required>
+                
+              </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input 
+                type="password"
+                name="Senha"
+                id="idSenha"
+                placeholder="Digite sua senha"
+                minlength="4"
+                maxlength="15">
+              </div>
+              <div>
+                <button type="submit" id="btnEntrar">Entrar</button>
+              </div>
+            </fieldset>
+
+          </form>
+ 
+          <span>Não tem conta?</span><a aria-label="Para criar sua conta" class="hero__btn" href="./index.html?Luigi&sobre-nome=Tormim">clique aqui</a>
+ 
+        </div>
+      </section>
+    </main>
+ 
+    <footer class="footer">
+      <p>&copy; Todos os direitos reservados - ESPORTE TOTAL - 2026</p>
+    </footer>
+ 
+  </body>
+</html>
