@@ -41,4 +41,21 @@
 
 // console.log(nome + " tem " + idade + " anos. Está " +(status === true ? "empregado " : "desempregado " + "atualmente."))
 
-// console.log(`${nome} tem ${idade} está ${status === true ? "empregado" : "desempregado"} atualmente. Template-literal`);
+// console.log(`${nome} tem ${idade} está ${status === true ? "empregado" : "desempregado"} atualmente. Template-literal`)
+// ;
+
+
+
+//Capturando o botão de entrar
+const botaoEntrar = document.getElementById("btnEntrar");
+
+//Atrelando ao botão uma função que vai receber dois parâmetros.
+//O primeiro será o evento da tela e o segundo será a função de callBack ou função anônima.
+botaoEntrar.addEventListener("click", function(){
+    console.log("O botão de entrar está clicado.")
+});
+
+//Para casa:
+//Capturar os campos de email e senha.
+//Armazenar em variáveis.
+//Imprimir seus valores.
