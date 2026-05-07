@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
     <title>ESPORTE TOTAL - LOGIN</title>
 </head>
@@ -35,9 +35,23 @@
                         <legend>LOGIN</legend>
                         <div>
                             <label for="idEmail">Email</label>
-                            <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required />
+                            <input 
+                            type="email" 
+                            name="email" 
+                            id="idEmail" 
+                            placeholder="Digite seu email" 
+                            minlength="13" 
+                            maxlength="150" 
+                            required />
                             <label for="idSenha">Senha</label>
-                            <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" minlength="5" maxlength="30" required />
+                            <input 
+                            type="password" 
+                            name="senha" 
+                            id="idSenha" 
+                            placeholder="Digite sua senha"
+                            minlength="5" 
+                            maxlength="30" 
+                            required />
                         </div>
                         <div>
                             <button type="submit" id="btnEntrar">Entrar</button>
