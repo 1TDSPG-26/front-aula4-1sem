@@ -1,31 +1,16 @@
-// alert("olá mundo!");
-// var nome = prompt("Olá digite seu nome");
 
-// alert("Meu nome é " + nome);
-// console.log("Meu nome é " + nome);
+//capturando botao
+const botaoEntrar = document.getElementById("btnEntrar");
 
-<<<<<<< HEAD
-//declarando variaveis em JS com let
+console.log(botaoEntrar);
 
-let nome = "Jose";
-let idade = 33;
-let status = false;
+//atrelando ao botao uma funcao que vai receber dois parametros
+//o primeiro sera o evento de tela, o segundo sera a funcao de callBack ou funcao anonima
+botaoEntrar.addEventListener("click", function(){
+    console.log("Botao de entrar clicado");
+});
 
-//imprimir os dados do nosso usuario JOSE com console.log usando concatenacao simples:
-console.log(nome + " de " + idade +" anos esta " + (status === true ? "empregado" : "desempregado") + " atualmente.")
-
-//exercicio
-console.log(`${nome} de ${idade} anos esta ${(status === true ? "empregado" : "desempregado")} atualmente.`);
-=======
-//Declarando variáveis em JS com let
-
-let nome = "José";
-let idade = 33;
-let status = false;
-
-//Imprimindo os dados do noss usário José com console.log usando concatenação simples>
-
-console.log(nome + " tem " + idade + " anos. Está " +(status === true ? "empregado " : "desempregado " + "atualmente."))
-
-console.log(`${nome} tem ${idade} está ${status === true ? "empregado" : "desempregado"} atualmente. Template-literal`);
->>>>>>> origin/rm572956
+//para casa:
+//capturar os campos de email e senha
+//armazenar em variaveis
+//imprimir seus valores
