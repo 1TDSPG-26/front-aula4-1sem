@@ -1,16 +1,44 @@
-// Declarando variáveis em JS com let
-let nome = "José";
-let idade = 33;
-let status = false;
+// // alert("olá mundo!");
+// // var nome = prompt("Olá digite seu nome");
 
-// Imprimir os dados do nosso usuário José com console.log usando concatenação simples:
-console.log(nome + " de " + idade + " anos está " + (status ? "empregado" : "desempregado") + " atualmente.");
+// // alert("Meu nome é " + nome);
+// // console.log("Meu nome é " + nome);
 
-// Agora escrevendo a mesma frase com template literal:
-console.log(`${nome} de ${idade} anos está ${status ? "empregado" : "desempregado"} atualmente.`);
+// // HOISTING
+// // var nome = "Alê";
+// // let sobreNome = "Carlos";
 
-// Outro exemplo de frase com concatenação simples:
-console.log(nome + " tem " + idade + " anos e está " + (status ? "empregado" : "desempregado") + " atualmente.");
+// // if(true){
 
-// Outro exemplo com template literal:
-console.log(`${nome} tem ${idade} anos e está ${status ? "empregado" : "desempregado"} atualmente. (Template literal)`);
+// //     var nome = "Joaquim";
+// //     let sobreNome = "Das Couves";
+
+// // }
+
+// // console.log(nome);
+// // console.log(sobreNome);
+
+
+
+// //Declarando variáveis em JS com let
+
+// let nome   = "José";
+// let idade  = 33;
+// let status = false;
+
+// //Imprimir os dados do nosso usuário JOSÉ com console.log usando concatenação simples:
+// console.log(nome + " de " + idade +" anos está " + (status === true ? "empregado" : "desempregado") + " atualmente.");
+
+// //Exercício: agora escreva a mesma frase com template-literal, onde o texto e as variáveis ficam dentro de ` ` e as variáveis são apresentadas entre os símbolos de ${variável}.
+// console.log( `${nome} de ${idade} anos está ${(status === true ? "empregado" : "desempregado")} atualmente.` );
+// //Declarando variáveis em JS com let
+
+// let nome = "José";
+// let idade = 33;
+// let status = false;
+
+// //Imprimindo os dados do noss usário José com console.log usando concatenação simples>
+
+// console.log(nome + " tem " + idade + " anos. Está " +(status === true ? "empregado " : "desempregado " + "atualmente."))
+
+// console.log(`${nome} tem ${idade} está ${status === true ? "empregado" : "desempregado"} atualmente. Template-literal`);
