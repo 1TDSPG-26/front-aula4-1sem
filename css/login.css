@@ -1,10 +1,8 @@
-input:valid{
-border: 2px solid rgb(0, 255, 55);
-
+input:valid:not(:placeholder-shown){
+    border: 2px solid green;
 }
 
-
 input:invalid:not(:placeholder-shown){
-border: 2px solid red;
-
+    border: 2px solid red;
+>>>>>>> main
 }
