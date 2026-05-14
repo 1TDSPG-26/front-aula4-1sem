@@ -1,46 +1,57 @@
-// alert("olá mundo!");
-// var nome = prompt("Olá digite seu nome");
 
-// alert("Meu nome é " + nome);
-// console.log("Meu nome é " + nome);
-
-<<<<<<< HEAD
-var nome = "Alê";
-let sobreNome = "Carlos";
-
-if(true){
-     nome = "Joaquim";
-     sobreNome = "Das Couves";
+//Objeto INTERNO
+const usuarioDb = {
+    email:"email@email.com",
+    senha:"12345",
+    nome: "José Antonio",
+    avatar: "https://placehold.co/100x100/e6e6e6/444444.png?text=usu%C3%A1rio&font=roboto"
 }
 
-console.log(nome);
-console.log(sobreNome);
-=======
-// HOISTING
-// var nome = "Alê";
-// let sobreNome = "Carlos";
 
-// if(true){
+//Capturando o botão de entrar
+const botaoEntrar = document.getElementById("btnEntrar");
+console.log(botaoEntrar);
 
-//     var nome = "Joaquim";
-//     let sobreNome = "Das Couves";
+//Atrelando ao botão uma função que vai receber dois parâmetros.
+// O primeiro será o evento de tela, o segundo será a função de callBack ou função anônima.
 
-// }
+botaoEntrar.addEventListener("click", function(e){
+    
+    e.preventDefault();
 
-// console.log(nome);
-// console.log(sobreNome);
+    //Para casa:
+    //Capturar os campos de email e senha.
+    //Armazenar em variáveis.
+    //Imprimir seus valores.
+    const email = document.querySelector("#idEmail");
+    const senha = document.querySelector("#idSenha");
+    
+    //Armazenar os dados que chegam do form em um objeto:
+    const userForm = {
+        email: email.value,
+        senha: senha.value
+    }
 
+    //Validação
+    try {
 
+        if (usuarioDb) {
 
-//Declarando variáveis em JS com let
+            if( (usuarioDb.email === userForm.email) && (usuarioDb.senha === userForm.senha)){
+                alert("Login realizado com sucesso!");
+                //Redirecionamento do usuário para uma nova página!!
+                window.location.href = "../index.html";
+            }else{
+                throw Error("Email ou Senha incorretos.");
+            }
+            
+        }else{
+            throw Error("Ocorreu um erro no acesso as informações do usuário.");
+        }
 
-let nome   = "José";
-let idade  = 33;
-let status = false;
+    } catch (error) {
+        console.error(error);
+        alert(error);
+    }
 
-//Imprimir os dados do nosso usuário JOSÉ com console.log usando concatenação simples:
-console.log(nome + " de " + idade +" anos está " + (status === true ? "empregado" : "desempregado") + " atualmente.");
-
-//Exercício: agora escreva a mesma frase com template-literal, onde o texto e as variáveis ficam dentro de ` ` e as variáveis são apresentadas entre os símbolos de ${variável}.
-console.log( `${nome} de ${idade} anos está ${(status === true ? "empregado" : "desempregado")} atualmente.` ); 
->>>>>>> origin/RM572019
+});
